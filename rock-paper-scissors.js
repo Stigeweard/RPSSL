@@ -1,9 +1,6 @@
-
-
 var userChoice = prompt("Do you choose lizard, spock, rock, paper or scissors?");
 var computerChoice = Math.random();
 var winnerText = "";
-
 
 if (computerChoice <= 0.2) {
   computerChoice = "rock";
@@ -28,8 +25,7 @@ var compare = function(userChoice, computerChoice) {
         winnerText = "You win! Rock crushes Lizard."
       } else if (computerChoice === "spock") {
         winnerText = "You lose! Spock vaporizes Rock."
-      }
-      else {
+      } else {
         winnerText = "You Lose! Paper beats Rock.";
       }
     } else if (userChoice === "paper") {
@@ -39,8 +35,7 @@ var compare = function(userChoice, computerChoice) {
         winnerText = "You lose! Lizard eats Paper."
       } else if (computerChoice === "spock") {
         winnerText = "You win! Paper disapproves of Spock."
-      }
-      else {
+      } else {
         winnerText = "You win! Paper beats Rock.";
       }
     } else if (userChoice === "scissors") {
@@ -50,8 +45,7 @@ var compare = function(userChoice, computerChoice) {
         winnerText = "You win! Scissors decapitate Lizard."
       } else if (computerChoice === "spock") {
         winnerText = "You lose! Spock smashes Scissors."
-      }
-      else {
+      } else {
         winnerText = "You lose! Rock beats Scissors.";
       }
     } else if (userChoice === "lizard") {
@@ -73,8 +67,7 @@ var compare = function(userChoice, computerChoice) {
         winnerText = "You lose! Lizard poisons Spock."
       } else if (computerChoice === "scissors") {
         winnerText = "You win! Spock smashes Scissors."
-      }
-      else {
+      } else {
         winnerText = "You win! Spock vaporizes Rock.";
       }
     }
@@ -102,5 +95,3 @@ function reset(){
     computerChoice = "spock";
   }
 }
-
-// reset();
